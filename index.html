@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven Hotel</title>
+    <meta name="description" content="Welcome to Heaven Hotel">
+    <link rel="icon" href="#">
+    <link rel="icon" type="image/x-icon" href="/a.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="/DD.png" alt="Heaven Hotel">
+    </div>
+    <nav>
+        <button>Services</button>
+        <button>View</button>
+        <button>Excursions</button>
+        <button>Rooms</button>  <!-- إضافة الـ Room هنا -->
+        <button>Contact Us</button>
+    </nav>
+    <div class="menu-icon" id="menu-icon">
+        &#9776;  <!-- Hamburger icon -->
+    </div>
+</header>
+
+<!-- Static Text Block over Image -->
+<div class="hero-image">
+    <img id="doo" src="/dm.jpg" alt="Hotel Image">
+    <div class="text-container">
+        <p>Welcome to [HEAVEN HOSTEL] – Your Gateway to Unforgettable Experiences!</p>
+        <p>We’re thrilled to have you here! Whether you’re dreaming of a luxurious getaway or seeking the perfect adventure, you’ve come to the right place. At [Your Website Name], we offer handpicked hotels and exclusive travel packages designed to make your next trip extraordinary.</p>
+        <p>From serene beach resorts to exciting city escapes, we’ve got the perfect destination just waiting for you. Explore our curated selection of stunning hotels, breathtaking locations, and unforgettable tours. Let us help you create memories that last a lifetime.</p>
+        <p>Start planning your next adventure with us today!</p>
+    </div>
+</div>
+
+<!-- Section with images and explanations -->
+<section class="services">
+    <div class="service">
+        <div class="service-description">
+            <h3>Comfort and Beauty</h3>
+            <p>Experience the ultimate relaxation at our luxurious hotel, where beauty and comfort meet to provide an unforgettable stay.</p>
+        </div>
+        <img src="/image1.jpg" alt="Comfort and Beauty" class="service-image">
+    </div>
+    <div class="service">
+        <div class="service-description">
+            <h3>Security</h3>
+            <p>Your safety is our top priority. Enjoy peace of mind with our 24/7 security services and modern facilities.</p>
+        </div>
+        <img src="/image2.jpg" alt="Security" class="service-image">
+    </div>
+    <div class="service">
+        <div class="service-description">
+            <h3>Excursions</h3>
+            <p>Explore breathtaking destinations with our exclusive excursions, designed to offer the best travel experiences.</p>
+        </div>
+        <img src="/Alexandria-Catacombs-c.ETA_.jpg" alt="Excursions" class="service-image">
+    </div>
+    <div class="service">
+        <div class="service-description">
+            <h3>24/7 Service</h3>
+            <p>Our dedicated team is available round the clock to ensure that all your needs are met, whenever you need them.</p>
+        </div>
+        <img src="/image4.jpg" alt="24/7 Service" class="service-image">
+    </div>
+    <div class="service">
+        <div class="service-description">
+            <h3>Luxury Rooms</h3>
+            <p>Relax in our elegant and spacious rooms, designed with your comfort in mind to provide the perfect escape.</p>
+        </div>
+        <img src="/image5.jpg" alt="Luxury Rooms" class="service-image">
+    </div>
+    <div class="service">
+        <div class="service-description">
+            <h3>Dining Experience</h3>
+            <p>Indulge in delicious meals with a variety of cuisines from around the world, served in a beautiful setting.</p>
+        </div>
+        <img src="/DD.jpg" alt="Dining Experience" class="service-image">
+    </div>
+</section>
+
+<script>
+    // الحصول على العناصر
+    const menuIcon = document.getElementById('menu-icon');
+    const nav = document.querySelector('nav');
+    
+    // إضافة حدث click لتفعيل القائمة
+    menuIcon.addEventListener('click', () => {
+        nav.classList.toggle('active'); // إضافة أو إزالة الكلاس 'active' لعرض/إخفاء القائمة
+    });
+</script>
+
+</body>
+</html>
